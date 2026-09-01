@@ -1,13 +1,9 @@
 :root{
-  /* Dark navy blackish background with golden text */
+  /* All golden text, dark navy blackish background */
   --bg-dark: #0a0f1f;       /* dark navy blackish background */
-  --bg-darker: #050809;     /* even darker navy */
   --text-gold: #d4af37;     /* golden/champagne text */
   --text-gold-light: #e8d4a8; /* lighter gold for secondary text */
-  --accent-cyan: #4db8d4;   /* cyan/light blue accent */
-  --accent-cyan-light: #7dd3e8;
-  --accent-purple: #7c3aed;  /* purple for Vivista brand */
-  --muted: #9fa8b3;         /* muted blue-gray */
+  --muted: #b8a86f;         /* muted gold */
   --surface: #0f1729;       /* card background - slightly lighter navy */
   --surface-light: #141f33; /* even lighter for hover effects */
   --max-width: 1100px;
@@ -31,7 +27,7 @@ body {
 
 .site-header {
   background: #0a0f1f;
-  border-bottom: 1px solid rgba(77, 184, 212, 0.1);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
   padding: 1rem 0;
   position: sticky;
   top: 0;
@@ -80,7 +76,8 @@ body {
 }
 
 .main-nav a:hover {
-  color: var(--accent-cyan-light);
+  color: #f5d960;
+  text-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
 }
 
 .main-nav .cta {
@@ -95,14 +92,13 @@ body {
 
 .main-nav .cta:hover {
   background: rgba(212, 175, 55, 0.1);
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
+  color: #f5d960;
 }
 
 .hero {
   background: #0a0f1f;
   padding: 4rem 0;
-  border-bottom: 1px solid rgba(77, 184, 212, 0.08);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.08);
   position: relative;
   overflow: hidden;
 }
@@ -114,7 +110,7 @@ body {
   right: 0;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(77, 184, 212, 0.05) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
   border-radius: 50%;
 }
 
@@ -137,7 +133,7 @@ body {
 }
 
 .hero-label {
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   font-size: 0.9rem;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -151,7 +147,7 @@ body {
   content: '';
   width: 30px;
   height: 1px;
-  background: var(--accent-cyan);
+  background: var(--text-gold);
   display: inline-block;
 }
 
@@ -181,14 +177,15 @@ body {
 }
 
 .btn.primary {
-  background: linear-gradient(90deg, var(--accent-cyan), var(--accent-cyan-light));
+  background: var(--text-gold);
   color: #0a0f1f;
   border: none;
 }
 
 .btn.primary:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(77, 184, 212, 0.3);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+  background: #f5d960;
 }
 
 .btn.ghost {
@@ -199,8 +196,7 @@ body {
 
 .btn.ghost:hover {
   background: rgba(212, 175, 55, 0.1);
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
+  color: #f5d960;
 }
 
 .btn.outline {
@@ -213,8 +209,8 @@ body {
   background: linear-gradient(135deg, rgba(15, 23, 41, 0.8) 0%, rgba(20, 31, 51, 0.6) 100%);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 8px 32px rgba(77, 184, 212, 0.15);
-  border: 1px solid rgba(77, 184, 212, 0.2);
+  box-shadow: 0 8px 32px rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   backdrop-filter: blur(10px);
 }
 
@@ -242,7 +238,7 @@ body {
   content: '→';
   position: absolute;
   left: 0;
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   font-weight: bold;
 }
 
@@ -255,16 +251,16 @@ body {
 }
 
 .metrics li {
-  background: rgba(77, 184, 212, 0.08);
+  background: rgba(212, 175, 55, 0.08);
   padding: .8rem 1.2rem;
   border-radius: 8px;
-  border: 1px solid rgba(77, 184, 212, 0.15);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   color: var(--text-gold-light);
   flex: 1;
 }
 
 .metrics strong {
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   display: block;
   font-size: 1.5rem;
   margin-bottom: 0.3rem;
@@ -292,16 +288,16 @@ body {
   background: linear-gradient(135deg, rgba(15, 23, 41, 0.6) 0%, rgba(20, 31, 51, 0.4) 100%);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(77, 184, 212, 0.1);
-  border: 1px solid rgba(77, 184, 212, 0.15);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.08);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
 }
 
 .service:hover {
   transform: translateY(-6px);
-  box-shadow: 0 15px 40px rgba(77, 184, 212, 0.2);
-  border-color: rgba(77, 184, 212, 0.3);
+  box-shadow: 0 15px 40px rgba(212, 175, 55, 0.15);
+  border-color: rgba(212, 175, 55, 0.25);
 }
 
 .service h3,
@@ -334,7 +330,7 @@ body {
   content: '◆';
   position: absolute;
   left: 0;
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   font-size: 0.6rem;
   top: 0.4rem;
 }
@@ -365,13 +361,13 @@ body {
   background: linear-gradient(135deg, rgba(15, 23, 41, 0.5) 0%, rgba(20, 31, 51, 0.3) 100%);
   padding: 1.5rem;
   border-radius: 10px;
-  border: 1px solid rgba(77, 184, 212, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.12);
   transition: all 0.3s ease;
 }
 
 .offer:hover {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 8px 20px rgba(77, 184, 212, 0.15);
+  border-color: var(--text-gold);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.12);
 }
 
 .offer h4 {
@@ -417,14 +413,14 @@ body {
   left: 0;
   top: 0;
   font-weight: 700;
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   font-size: 1.5rem;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid var(--accent-cyan);
+  border: 2px solid var(--text-gold);
   border-radius: 50%;
 }
 
@@ -433,10 +429,10 @@ body {
 }
 
 .case-cta {
-  background: linear-gradient(135deg, rgba(77, 184, 212, 0.1) 0%, rgba(124, 58, 237, 0.05) 100%);
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(212, 175, 55, 0.04) 100%);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(77, 184, 212, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   margin-top: 2rem;
 }
 
@@ -453,7 +449,7 @@ body {
   background: linear-gradient(135deg, rgba(15, 23, 41, 0.7) 0%, rgba(20, 31, 51, 0.5) 100%);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(77, 184, 212, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   margin-top: 2rem;
   backdrop-filter: blur(10px);
 }
@@ -470,12 +466,13 @@ body {
 }
 
 .approach-address a {
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .approach-address a:hover {
-  color: var(--text-gold);
+  color: #f5d960;
 }
 
 .approach-address address {
@@ -540,7 +537,7 @@ body {
   width: 100%;
   padding: .8rem;
   border-radius: 8px;
-  border: 1px solid rgba(77, 184, 212, 0.25);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   background: rgba(10, 15, 31, 0.7);
   color: var(--text-gold);
   font-family: inherit;
@@ -550,8 +547,8 @@ body {
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 12px rgba(77, 184, 212, 0.2);
+  border-color: var(--text-gold);
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.2);
   background: rgba(10, 15, 31, 0.9);
 }
 
@@ -576,7 +573,7 @@ body {
   background: linear-gradient(135deg, rgba(15, 23, 41, 0.7) 0%, rgba(20, 31, 51, 0.5) 100%);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(77, 184, 212, 0.2);
+  border: 1px solid rgba(212, 175, 55, 0.15);
   backdrop-filter: blur(10px);
 }
 
@@ -587,20 +584,13 @@ body {
 }
 
 .office-info-section a {
-  color: var(--accent-cyan);
+  color: var(--text-gold);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .office-info-section a:hover {
-  color: var(--text-gold);
-}
-
-.office-info-section address {
-  color: var(--text-gold-light);
-  font-style: normal;
-  line-height: 1.8;
-  margin: 1rem 0;
+  color: #f5d960;
 }
 
 .site-footer {
@@ -608,7 +598,7 @@ body {
   color: var(--text-gold);
   padding: 2.5rem 0;
   margin-top: 3rem;
-  border-top: 1px solid rgba(77, 184, 212, 0.1);
+  border-top: 1px solid rgba(212, 175, 55, 0.1);
 }
 
 .footer-grid {
@@ -625,7 +615,7 @@ body {
 }
 
 .footer-grid a:hover {
-  color: var(--accent-cyan);
+  color: #f5d960;
 }
 
 .footer-nav {
@@ -651,7 +641,7 @@ body {
 }
 
 .contact-info a:hover {
-  color: var(--accent-cyan);
+  color: #f5d960;
 }
 
 @media (max-width: 880px) {
