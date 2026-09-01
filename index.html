@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vivista IT Solutions — Analytics Consulting, Implementation, Training & Staffing</title>
-  <meta name="description" content="Vivista IT Solutions provides consulting, implementation, training and staffing in Analytics: Data Warehousing, Business Intelligence, Predictive Analytics, Big Data Processing, Data Strategy & Governance, and DevOps services including Atlassian." />
+  <meta name="description" content="Vivista IT Solutions provides consulting, implementation, training and staffing in Analytics: Data Warehousing, Business Intelligence, Predictive Analytics, Big Data, Data Strategy & Governance, and DevOps." />
   <meta property="og:title" content="Vivista IT Solutions — Analytics & DevOps Consulting" />
-  <meta property="og:description" content="Enterprise analytics and DevOps services that deliver measurable ROI — Data Warehousing, BI, Predictive Analytics, Big Data, Data Strategy & Governance, DevOps and Atlassian services." />
+  <meta property="og:description" content="Enterprise analytics and DevOps services that deliver measurable ROI — Data Warehousing, BI, Predictive Analytics, Big Data, Data Strategy & Governance, DevOps." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://vivista.in/" />
   <link rel="stylesheet" href="styles.css" />
@@ -20,7 +20,8 @@
         <span class="brand">Vivista IT Solutions</span>
       </a>
       <nav class="main-nav" aria-label="Primary">
-        <a href="#services">Services</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#devops">DevOps</a>
         <a href="#offerings">Offerings</a>
         <a href="#approach">Approach</a>
         <a href="#contact" class="cta">Book a Briefing</a>
@@ -33,10 +34,10 @@
       <div class="container hero-grid">
         <div>
           <h1>Turning data into decisive action for enterprise leaders</h1>
-          <p class="lead">We partner with CXOs to build measurable analytics capabilities — from strategy and governance to implementation, training and staffing. Faster insights. Lower risk. Clear ROI.</p>
+          <p class="lead">We partner with CXOs to build measurable analytics capabilities — from strategy and governance to implementation, training and staffing. Faster insights. Lower risk. Clearer ROI.</p>
           <div class="hero-cta">
             <a class="btn primary" href="#contact">Request Executive Briefing</a>
-            <a class="btn ghost" href="#services">See Services</a>
+            <a class="btn ghost" href="#analytics">See Services</a>
           </div>
           <ul class="metrics">
             <li><strong>10x</strong> faster time-to-insight</li>
@@ -56,11 +57,11 @@
       </div>
     </section>
 
-    <section id="services" class="container services-section">
-      <h2>Services</h2>
-      <p class="section-lead">Focused enterprise services to accelerate your analytics and DevOps capabilities.</p>
+    <!-- Analytics Services Section -->
+    <section id="analytics" class="container services-section">
+      <h2>Analytics Services</h2>
+      <p class="section-lead">Focused enterprise analytics services to accelerate your data capabilities.</p>
       <div class="services-grid">
-        <!-- Analytics services -->
         <article class="service">
           <h3>01 — Data Warehousing</h3>
           <p>Build robust, scalable data warehouses for enterprise-wide analytics and reporting. We design dimensional models, ETL/ELT pipelines, and optimize for performance and cost.</p>
@@ -110,10 +111,16 @@
             <li>Privacy, compliance & role-based access</li>
           </ul>
         </article>
+      </div>
+    </section>
 
-        <!-- DevOps service with single-line Atlassian bullets -->
+    <!-- DevOps Services Section -->
+    <section id="devops" class="container services-section">
+      <h2>DevOps Services</h2>
+      <p class="section-lead">Accelerate delivery with modern DevOps practices and automation.</p>
+      <div class="services-grid">
         <article class="service">
-          <h3>06 — DevOps</h3>
+          <h3>06 — DevOps & Automation</h3>
           <p>Accelerate delivery with CI/CD, automation, and modern DevOps practices to improve release velocity, reliability, and operational visibility.</p>
           <ul>
             <li><strong>CI/CD Pipeline Implementation</strong> — Automate your build, test, and deployment processes.</li>
@@ -158,59 +165,55 @@
         <li><strong>Operate</strong> — Handover, training, and staffing for sustainable operations.</li>
       </ol>
       <div class="case-cta">
-        <p><strong>Executive case study:</strong> Reduced reporting lead time from 48 hours to real-time for a Fortune 500 retailer — 25% revenue uplift from dynamic pricing insights. (Detailed deck available on request.)</p>
+        <p><strong>Executive case study:</strong> Reduced reporting lead time from 48 hours to real-time for a Fortune 500 retailer — 25% revenue uplift from dynamic pricing insights. (Detailed case study available on request.)</p>
         <a href="#contact" class="btn primary">Request the Case Study</a>
       </div>
     </section>
 
-    <section id="trust" class="container trust">
-      <h2>Trusted by</h2>
-      <p class="small">Enterprises, scale-ups and public sector organizations seeking measurable analytics outcomes.</p>
-      <div class="logos-grid">
-        <div class="logo-slot">Client A</div>
-        <div class="logo-slot">Client B</div>
-        <div class="logo-slot">Client C</div>
-        <div class="logo-slot">Client D</div>
-      </div>
-    </section>
-
     <section id="contact" class="container contact">
-      <h2>Contact — Schedule an Executive Briefing</h2>
+      <h2>Contact & Schedule an Executive Briefing</h2>
       <p class="section-lead">Book a 30-minute briefing with our founding partners to discuss strategy, quick wins and a tailored roadmap.</p>
 
-      <form id="contactForm" class="contact-form" novalidate>
-        <label>
-          Full name
-          <input type="text" name="name" id="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" id="email" required />
-        </label>
-        <label>
-          Company & role
-          <input type="text" name="company" id="company" required />
-        </label>
-        <label>
-          Message / topics of interest
-          <textarea name="message" id="message" rows="4" required></textarea>
-        </label>
-        <div class="form-actions">
-          <button type="submit" class="btn primary">Request Briefing</button>
-          <a class="btn ghost" href="mailto:suresh.mk@vivista.in">Or email suresh.mk@vivista.in</a>
+      <div class="contact-container">
+        <div class="contact-form-section">
+          <h3>Get in Touch</h3>
+          <form id="contactForm" class="contact-form" novalidate>
+            <label>
+              Full name
+              <input type="text" name="name" id="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" id="email" required />
+            </label>
+            <label>
+              Company & role
+              <input type="text" name="company" id="company" required />
+            </label>
+            <label>
+              Message / topics of interest
+              <textarea name="message" id="message" rows="4" required></textarea>
+            </label>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Request Briefing</button>
+              <a class="btn ghost" href="mailto:suresh.mk@vivista.in">Or email directly</a>
+            </div>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
         </div>
-        <p id="formStatus" class="form-status" aria-live="polite"></p>
-      </form>
 
-      <div class="office-info">
-        <h4>Office</h4>
-        <address>
-          Vivista IT Solutions<br/>
-          Bharthiya city, Nikoo homes Ph 1,<br/>
-          Opp Leela Hotel, Thanisandra,<br/>
-          Bangalore — 560064
-        </address>
-        <p>Phone: <a href="tel:+918431972939">+91 84319 72939</a></p>
+        <div class="office-info-section">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> <a href="mailto:suresh.mk@vivista.in">suresh.mk@vivista.in</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+918431972939">+91 84319 72939</a></p>
+          <h4>Office Address</h4>
+          <address>
+            Vivista IT Solutions<br/>
+            Bharthiya city, Nikoo homes Ph 1,<br/>
+            Opp Leela Hotel, Thanisandra,<br/>
+            Bangalore — 560064
+          </address>
+        </div>
       </div>
     </section>
   </main>
@@ -222,7 +225,8 @@
         <p>Analytics consulting, DevOps, implementation, training & staffing — vivista.in</p>
       </div>
       <nav class="footer-nav">
-        <a href="#services">Services</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#devops">DevOps</a>
         <a href="#offerings">Offerings</a>
         <a href="#approach">Approach</a>
         <a href="#contact">Contact</a>
@@ -230,7 +234,6 @@
       <div class="contact-info">
         <p>Email: <a href="mailto:suresh.mk@vivista.in">suresh.mk@vivista.in</a></p>
         <p>Phone: <a href="tel:+918431972939">+91 84319 72939</a></p>
-        <p>Address: Bharthiya city, Nikoo homes Ph 1, Opp Leela Hotel, Thanisandra, Bangalore 560064</p>
         <p>© Vivista IT Solutions 2026 — All rights reserved</p>
       </div>
     </div>
